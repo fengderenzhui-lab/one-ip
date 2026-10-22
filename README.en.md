@@ -21,10 +21,6 @@ A toolbox for IP lookups, network diagnostics, browser checks and AI service sta
 
 [Live demo](https://windblade.top/) · [GitHub](https://github.com/fengderenzhui-lab/one-ip)
 
-Click the button below for one-click deployment to Cloudflare.
-
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https%3A%2F%2Fgithub.com%2Ffengderenzhui-lab%2Fone-ip)
-
 ## Terminal and API
 
 After deploying this version, use `GET /api/ip/health` without an API key:
@@ -57,7 +53,7 @@ The project uses **Cloudflare Workers with Static Assets**. The `/api/*` routes 
 
 For map access from mainland China, configure `TIANDITU_TOKEN` under Worker → Settings → Variables and Secrets (or run `pnpm exec wrangler secret put TIANDITU_TOKEN`). Maps prefer Tianditu and fall back to OpenStreetMap when unavailable; without the token, OpenStreetMap remains the default.
 
-Workers Builds builds and deploys when `main` receives a commit. The button above points to the original repository. To preserve the fork relationship and update workflow, follow the steps to import your fork.
+Workers Builds builds and deploys when `main` receives a commit. To preserve the fork relationship and update workflow, follow the steps to import your fork.
 
 ## Features
 
@@ -96,25 +92,6 @@ IP addresses, detailed locations and ISP / ASN information have been redacted. V
     <td><img src="docs/screenshots/mobile-home-dark-redacted.png" alt="Redacted mobile dark overview" width="360" /></td>
   </tr>
 </table>
-
-## Update your fork
-
-Click **Sync fork → Update branch** on your GitHub repository page. Review differences if you have code changes, and resolve merge conflicts.
-
-For scheduled updates, enable `Sync upstream`:
-
-1. Enable workflows in your fork's Actions tab.
-2. Under Settings → Secrets and variables → Actions → **Variables**, add `AUTO_SYNC_UPSTREAM=true`.
-3. The workflow checks for updates at 04:23 UTC each day. You can run it from the Actions page.
-
-The workflow supports forks created from `zhihui-hu/one-ip` and requires no personal access token. It uses GitHub's `merge-upstream` API, stops on conflicts and preserves your commits. Use GitHub's Sync fork if you want to review updates.
-
-- **Workers Builds:** connect your fork's production branch and check deployment records for synchronized commits in Cloudflare's build history.
-- **GitHub Actions deployment:** the sync workflow triggers deployment when it merges updates. Pushes made with `GITHUB_TOKEN` do not trigger ordinary `push` workflows.
-- If branch protection blocks a merge, use a PR.
-- Enable scheduled workflows in your fork. GitHub may disable schedules after 60 days of inactivity in a public repository; use the Actions page to enable them.
-
-References: [Syncing a fork](https://docs.github.com/en/pull-requests/how-tos/work-with-forks/syncing-a-fork), [GITHUB_TOKEN triggering behavior](https://docs.github.com/en/actions/concepts/security/github_token), [Workflow disabling rules](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/disable-and-enable-workflows).
 
 ## GitHub Actions deployment (optional)
 

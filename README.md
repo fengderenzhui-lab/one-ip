@@ -23,10 +23,6 @@ IP 查询、网络诊断、浏览器检测与 AI 服务状态工具箱。
 
 [在线体验](https://windblade.top/) · [GitHub](https://github.com/fengderenzhui-lab/one-ip)
 
-点击下方按钮，一键部署到 Cloudflare。
-
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https%3A%2F%2Fgithub.com%2Ffengderenzhui-lab%2Fone-ip)
-
 ## Cloudflare 部署教程
 
 1. [Fork 本项目](https://github.com/fengderenzhui-lab/one-ip/fork)到你的 GitHub 账号。
@@ -39,7 +35,7 @@ IP 查询、网络诊断、浏览器检测与 AI 服务状态工具箱。
 
 国内网络访问地图时，建议在 Worker → Settings → Variables and Secrets 配置 `TIANDITU_TOKEN`（也可以用 `pnpm exec wrangler secret put TIANDITU_TOKEN`）。配置后地图优先使用天地图，失败时回退到 OpenStreetMap；未配置时保持 OpenStreetMap。
 
-Workers Builds 会在 `main` 收到提交时构建和部署。上方按钮使用原项目地址；需要保留 Fork 关系和更新工作流时，请按教程导入你的 Fork。
+Workers Builds 会在 `main` 收到提交时构建和部署。需要保留 Fork 关系和更新工作流时，请按教程导入你的 Fork。
 
 ## 功能
 
@@ -100,25 +96,6 @@ curl -fsS 'https://windblade.top/api/ip/health?ip=2606:4700:4700::1111&format=te
     <td><img src="docs/screenshots/mobile-home-dark-redacted.png" alt="手机深色首页（已打码）" width="360" /></td>
   </tr>
 </table>
-
-## Fork 更新
-
-在 GitHub 仓库页面点击 **Sync fork → Update branch**。有代码改动时检查差异，通过合并处理冲突。
-
-定时同步使用 `Sync upstream` 工作流：
-
-1. 在 Fork 的 Actions 页面启用工作流。
-2. 在 Settings → Secrets and variables → Actions → **Variables** 添加 `AUTO_SYNC_UPSTREAM=true`。
-3. 工作流在每天 UTC 04:23 检查更新。Actions 页面提供运行入口。
-
-支持范围是从 `zhihui-hu/one-ip` 创建的 Fork，无需个人访问令牌（PAT）。工作流通过 GitHub 的 `merge-upstream` 接口合并更新，遇到冲突时停止，保留你的提交。需要审核更新时，使用 GitHub 的 Sync fork。
-
-- **Workers Builds**：连接 Fork 的生产分支，在 Cloudflare 构建历史中检查同步提交的部署记录。
-- **GitHub Actions 部署**：同步产生更新时，工作流触发部署任务。`GITHUB_TOKEN` 产生的推送不会触发普通 `push` 工作流。
-- 分支保护阻止合并时，通过 PR 处理。
-- Fork 的定时工作流需要启用。公开仓库 60 天无活动可能导致 GitHub 停用定时任务，恢复入口在 Actions 页面。
-
-参考：[同步 Fork](https://docs.github.com/en/pull-requests/how-tos/work-with-forks/syncing-a-fork)、[GITHUB_TOKEN 触发规则](https://docs.github.com/en/actions/concepts/security/github_token)、[定时工作流停用规则](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/disable-and-enable-workflows)。
 
 ## GitHub Actions 部署（可选）
 
