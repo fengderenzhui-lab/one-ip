@@ -173,8 +173,6 @@ reCAPTCHA uses v3 score-based keys. The backend validates hostname, the `browser
 
 ## Structure and data sources
 
-Data sources differ by edition: the open-source edition uses publicly accessible data on the internet and public third-party APIs; the closed-source commercial edition supports private deployment and uses data from the private deployment environment. The specific data scope, retention and usage rights are subject to the commercial plan and contract.
-
 - `src/app.css`: interface styles; `src/components/ui`: shadcn/ui components.
 - `src/views`: network, browser, AI and status pages; `public/worker`: Worker APIs.
 - Net.Coffee: IP details. Available fields depend on the API response.

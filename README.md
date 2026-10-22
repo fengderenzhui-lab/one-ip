@@ -177,8 +177,6 @@ reCAPTCHA 使用 v3 评分型密钥。服务端校验 hostname、`browser_check`
 
 ## 项目结构与数据来源
 
-数据来源按版本区分：开源版本使用互联网公开可访问的数据和第三方公开接口；闭源商业版本支持私有化部署，使用私有部署环境中的数据。具体数据范围、留存方式和使用权限以商业方案及合同约定为准。
-
 - `src/app.css`：界面样式；`src/components/ui`：shadcn/ui 组件。
 - `src/views`：网络、浏览器、AI 与状态页面；`public/worker`：Worker API。
 - Net.Coffee：IP 详情，展示字段取决于接口返回。
