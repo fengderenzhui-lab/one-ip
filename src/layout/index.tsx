@@ -191,7 +191,7 @@ export function AppLayout() {
           </Tabs.Content>
         </AnimatedSegmentedTabs>
         <footer className="app-footer">
-          © {currentYear} IP ·{" "}
+          © {currentYear} NALIDE ·{" "}
           <UnderlineHover asChild>
             <a
               href="https://github.com/fengderenzhui-lab/one-ip"
