@@ -208,5 +208,3 @@ reCAPTCHA 使用 v3 评分型密钥。服务端校验 hostname、`browser_check`
 Claude 页面比较 `claude.ai` 与 `claude.com` 出口，并检查 DNS、WebRTC、语言、时区及浏览器特征。检测字典参考 [FuckClaude](https://github.com/LinXiaoTao/FuckClaude)，许可证和来源说明见 `vendor/claude-environment/`。
 
 以上结果仅用于环境排查，不代表 Claude 官方判定、账号风险或封禁概率；页面不读取本机 Claude Code 配置，也不展示 Cloudflare 企业版 Bot Management 分数。
-
-社区友链：[LINUX DO](https://linux.do/) · 真诚、友善、团结、专业。
