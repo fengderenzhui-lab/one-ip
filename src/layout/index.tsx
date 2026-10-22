@@ -194,7 +194,7 @@ export function AppLayout() {
           © {currentYear} IP ·{" "}
           <UnderlineHover asChild>
             <a
-              href="https://huzhihui.com/blog/one-ip-guide"
+              href="https://github.com/fengderenzhui-lab/one-ip"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -216,7 +216,7 @@ export function AppLayout() {
           ·{" "}
           <UnderlineHover asChild>
             <a
-              href="https://github.com/zhihui-hu/one-ip"
+              href="https://github.com/fengderenzhui-lab/one-ip"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 align-middle"
@@ -226,13 +226,7 @@ export function AppLayout() {
           </UnderlineHover>{" "}
           ·{" "}
           <UnderlineHover asChild>
-            <a href="mailto:ip@huzhihui.com">{t("policy.contactAuthor")}</a>
-          </UnderlineHover>{" "}
-          ·{" "}
-          <UnderlineHover asChild>
-            <a href="https://ipbot.net">
-              {t("navigation.ipbotCommercialSite")}
-            </a>
+            <a href="mailto:contact@nalide.com">{t("policy.contactAuthor")}</a>
           </UnderlineHover>
         </footer>
       </div>

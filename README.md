@@ -21,15 +21,15 @@ IP 查询、网络诊断、浏览器检测与 AI 服务状态工具箱。
 
 **中文** · [English](README.en.md)
 
-[在线体验](https://ip.huzhihui.com/) · [GitHub](https://github.com/zhihui-hu/one-ip)
+[在线体验](https://windblade.top/) · [GitHub](https://github.com/fengderenzhui-lab/one-ip)
 
 点击下方按钮，一键部署到 Cloudflare。
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https%3A%2F%2Fgithub.com%2Fzhihui-hu%2Fone-ip)
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https%3A%2F%2Fgithub.com%2Ffengderenzhui-lab%2Fone-ip)
 
 ## Cloudflare 部署教程
 
-1. [Fork 本项目](https://github.com/zhihui-hu/one-ip/fork)到你的 GitHub 账号。
+1. [Fork 本项目](https://github.com/fengderenzhui-lab/one-ip/fork)到你的 GitHub 账号。
 2. 登录 [Cloudflare 控制台](https://dash.cloudflare.com/)，进入 **Workers & Pages**，创建 Worker，选择导入 Git 仓库。
 3. 连接 GitHub，选择你的 `one-ip` Fork，生产分支填 `main`。
 4. 构建命令填 `pnpm build`，部署命令填 `pnpm deploy`。使用 Node.js 24 和 pnpm 10.32.1，根目录保持默认。
@@ -71,14 +71,14 @@ WebMCP 仍处于实验阶段。本地可在 Chrome 开启 `chrome://flags/#enabl
 
 ```bash
 # 当前请求的公网出口 IP，终端文本
-curl -fsS 'https://ip.huzhihui.com/api/ip/health?format=text'
+curl -fsS 'https://windblade.top/api/ip/health?format=text'
 
 # 默认返回 JSON，便于脚本处理
-curl -fsS 'https://ip.huzhihui.com/api/ip/health'
+curl -fsS 'https://windblade.top/api/ip/health'
 
 # 指定公网 IPv4 或 IPv6
-curl -fsS 'https://ip.huzhihui.com/api/ip/health?ip=1.1.1.1'
-curl -fsS 'https://ip.huzhihui.com/api/ip/health?ip=2606:4700:4700::1111&format=text'
+curl -fsS 'https://windblade.top/api/ip/health?ip=1.1.1.1'
+curl -fsS 'https://windblade.top/api/ip/health?ip=2606:4700:4700::1111&format=text'
 ```
 
 自部署时替换域名。本地开发使用 `http://127.0.0.1:8787`，必须指定 `ip`。省略 `ip` 时使用 Cloudflare 识别的本次请求出口；经过代理时会查询代理出口。
@@ -110,7 +110,7 @@ One IP 面向企业提供闭源商业版本及配套服务，适合网络与浏�
 - 定制开发、系统集成与 API 接入
 - 技术咨询、部署实施与持续支持
 
-如需了解商业版本、私有化部署或定制方案，请发送邮件至 [ip@huzhihui.com](mailto:ip@huzhihui.com)，并说明使用场景、部署方式和预计规模；项目详情可参阅 [GitHub 仓库](https://github.com/zhihui-hu/one-ip)。具体服务范围、数据权限与交付方式以双方约定为准。
+如需了解商业版本、私有化部署或定制方案，请发送邮件至 [contact@nalide.com](mailto:contact@nalide.com)，并说明使用场景、部署方式和预计规模；项目详情可参阅 [GitHub 仓库](https://github.com/fengderenzhui-lab/one-ip)。具体服务范围、数据权限与交付方式以双方约定为准。
 
 ## Fork 更新
 

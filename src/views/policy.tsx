@@ -89,9 +89,9 @@ export default function PolicyPage({ page }: { page: "terms" | "privacy" }) {
         </p>
         <a
           className="text-sm text-primary hover:underline"
-          href="mailto:ip@huzhihui.com"
+          href="mailto:contact@nalide.com"
         >
-          ip@huzhihui.com
+          contact@nalide.com
         </a>
       </ToolCard>
     </div>
