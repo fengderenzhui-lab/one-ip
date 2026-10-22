@@ -97,17 +97,6 @@ IP addresses, detailed locations and ISP / ASN information have been redacted. V
   </tr>
 </table>
 
-## Business Cooperation
-
-One IP offers a closed-source commercial edition and related services for organizations that need network and browser environment checks, AI service connectivity diagnostics, batch acceptance testing or continuous monitoring. Cooperation can cover:
-
-- Commercial licenses and team workflows
-- Private deployment and data isolation
-- Custom development, integrations and API access
-- Technical consulting, deployment and ongoing support
-
-To discuss the commercial edition, private deployment or a custom solution, email [contact@nalide.com](mailto:contact@nalide.com) with your use case, deployment model and expected scale. See the [GitHub repository](https://github.com/fengderenzhui-lab/one-ip) for project details. The final service scope, data permissions and delivery terms are subject to agreement.
-
 ## Update your fork
 
 Click **Sync fork → Update branch** on your GitHub repository page. Review differences if you have code changes, and resolve merge conflicts.

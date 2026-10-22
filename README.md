@@ -101,17 +101,6 @@ curl -fsS 'https://windblade.top/api/ip/health?ip=2606:4700:4700::1111&format=te
   </tr>
 </table>
 
-## 商务合作
-
-One IP 面向企业提供闭源商业版本及配套服务，适合网络与浏览器环境检测、AI 服务连通性诊断、批量验收和持续监测等场景。可合作内容包括：
-
-- 企业版授权与团队协作
-- 私有化部署与数据隔离
-- 定制开发、系统集成与 API 接入
-- 技术咨询、部署实施与持续支持
-
-如需了解商业版本、私有化部署或定制方案，请发送邮件至 [contact@nalide.com](mailto:contact@nalide.com)，并说明使用场景、部署方式和预计规模；项目详情可参阅 [GitHub 仓库](https://github.com/fengderenzhui-lab/one-ip)。具体服务范围、数据权限与交付方式以双方约定为准。
-
 ## Fork 更新
 
 在 GitHub 仓库页面点击 **Sync fork → Update branch**。有代码改动时检查差异，通过合并处理冲突。
