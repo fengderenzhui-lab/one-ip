@@ -55,7 +55,7 @@
   "api.noUnresolvedIncidentsReportedInTheFeed": "No unresolved incidents reported in the feed",
   "api.couldConnectOfficialDeepseekRssFeedRetryLater": "Could not connect to the official DeepSeek RSS feed. Retry later or visit the official page.",
   "apiUsage.tsx.myIpInformationApi": "My IP information API",
-  "apiUsage.tsx.oneIpProvidesPublicApiRequestEgressIp": "One IP provides a public API for the request egress IP, location, ASN, reputation score and risk flags. No API key is required.",
+  "apiUsage.tsx.oneIpProvidesPublicApiRequestEgressIp": "NALIDE provides a public API for the request egress IP, location, ASN, reputation score and risk flags. No API key is required.",
   "apiUsage.tsx.endpoint": "Endpoint:",
   "apiUsage.tsx.addIp1111QueryPublic": "Add ?ip=1.1.1.1 to query a public IPv4 / IPv6 address, or ?format=text for terminal text output.",
   "apiUsage.tsx.exampleResponse": "Example response",

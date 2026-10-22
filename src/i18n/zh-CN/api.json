@@ -55,7 +55,7 @@
   "api.noUnresolvedIncidentsReportedInTheFeed": "订阅源未报告未解决事件",
   "api.couldConnectOfficialDeepseekRssFeedRetryLater": "DeepSeek 官方订阅源连接失败，请稍后重试或查看官方页面。",
   "apiUsage.tsx.myIpInformationApi": "我的 IP 信息 API",
-  "apiUsage.tsx.oneIpProvidesPublicApiRequestEgressIp": "One IP 提供公开 API，可查询请求出口的 IP、位置信息、ASN、信誉分和风险标记，无需 API Key。",
+  "apiUsage.tsx.oneIpProvidesPublicApiRequestEgressIp": "NALIDE 提供公开 API，可查询请求出口的 IP、位置信息、ASN、信誉分和风险标记，无需 API Key。",
   "apiUsage.tsx.endpoint": "接口地址：",
   "apiUsage.tsx.addIp1111QueryPublic": "添加 ?ip=1.1.1.1 可查询指定公网 IPv4 / IPv6；添加 ?format=text 返回终端文本。",
   "apiUsage.tsx.exampleResponse": "示例输出",
