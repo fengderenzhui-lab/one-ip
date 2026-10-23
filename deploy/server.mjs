@@ -31,7 +31,7 @@ const PORT = Number(process.env.PORT || 3000);
 /* ---------------- rate limiters (mirror wrangler.toml) ---------------- */
 class FixedWindowLimiter {
   constructor(limit, periodSeconds) {
-    this.limit = limit;
+    this.max = limit;
     this.period = periodSeconds * 1000;
     this.buckets = new Map();
   }
@@ -47,7 +47,7 @@ class FixedWindowLimiter {
       for (const [k, b] of this.buckets)
         if (now - b.start >= this.period) this.buckets.delete(k);
     }
-    return { success: bucket.count <= this.limit };
+    return { success: bucket.count <= this.max };
   }
 }
 
