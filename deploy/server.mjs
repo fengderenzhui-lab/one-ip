@@ -14,10 +14,15 @@
 //   - caches.default        -> small in-memory cache honouring max-age
 //   - env secrets           -> read from process.env (TURNSTILE_* etc.)
 import http from "node:http";
+import { register } from "node:module";
 import { readFile, stat } from "node:fs/promises";
 import { extname, join, normalize, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import worker from "../public/worker/index.js";
+
+// Workers accepts bare JSON imports; Node ESM requires import attributes.
+// Register the bridge loader first, then load the worker code untouched.
+register("./json-loader.mjs", import.meta.url);
+const { default: worker } = await import("../public/worker/index.js");
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = join(ROOT, "dist");

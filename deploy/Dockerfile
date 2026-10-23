@@ -16,7 +16,7 @@ WORKDIR /app
 ENV NODE_ENV=production PORT=3000
 COPY --from=build /app/dist ./dist
 COPY public/worker ./public/worker
-COPY deploy/server.mjs ./deploy/server.mjs
+COPY deploy/server.mjs deploy/json-loader.mjs ./deploy/
 USER node
 EXPOSE 3000
 CMD ["node", "deploy/server.mjs"]
